@@ -8,14 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE
 @interface SYFavoriteButton : UIButton
 
-@property (nonatomic, strong) IBInspectable UIImage *image;
-@property (nonatomic, strong) IBInspectable UIColor *favoredColor;
-@property (nonatomic, strong) IBInspectable UIColor *defaultColor;
-@property (nonatomic, strong) IBInspectable UIColor *circleColor;
-@property (nonatomic, strong) IBInspectable UIColor *lineColor;
-@property (nonatomic, assign) IBInspectable CGFloat duration;
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) UIColor *favoredColor;
+@property (nonatomic, strong) UIColor *defaultColor;
+@property (nonatomic, strong) UIColor *circleColor;
+@property (nonatomic, strong) UIColor *lineColor;
+@property (nonatomic, assign) CGFloat duration;
 
 @end
