@@ -313,27 +313,46 @@
 }
 
 - (void)touchDown:(id)sender {
+    if (!self.animation) {
+        return;
+    }
     self.layer.opacity = 0.4;
 }
 
 - (void)touchUpInside:(id)sender {
+    if (!self.animation) {
+        return;
+    }
     self.layer.opacity = 1.0;
 }
 
 - (void)touchDragExit:(id)sender {
+    if (!self.animation) {
+        return;
+    }
     self.layer.opacity = 1.0;
 }
 
 - (void)touchDragEnter:(id)sender {
+    if (!self.animation) {
+        return;
+    }
     self.layer.opacity = 0.4;
 }
 
 - (void)touchCancel:(id)sender {
+    if (!self.animation) {
+        return;
+    }
     self.layer.opacity = 1.0;
 }
 
 - (void)select {
     self.imageShape.fillColor = self.favoredColor.CGColor;
+    
+    if (!self.animation) {
+        return;
+    }
     
     self.userInteractionEnabled = NO;
     [CATransaction setCompletionBlock:^{

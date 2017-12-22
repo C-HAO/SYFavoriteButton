@@ -16,5 +16,6 @@
 @property (nonatomic, strong) UIColor *circleColor;
 @property (nonatomic, strong) UIColor *lineColor;
 @property (nonatomic, assign) CGFloat duration;
+@property (nonatomic, assign) BOOL animation;
 
 @end
